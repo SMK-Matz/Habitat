@@ -1,0 +1,56 @@
+/* ─── Reset & base ─────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --moss:   #3a5a40;
+  --leaf:   #588157;
+  --sage:   #a3b18a;
+  --mist:   #dad7cd;
+  --cream:  #f8f5f0;
+  --earth:  #6b4f3a;
+  --sky:    #4a7c9e;
+  --water:  #e8f4f8;
+  --amber:  #c87941;
+  --danger: #b84040;
+
+  --text:   #1a2315;
+  --muted:  #5a6b55;
+  --border: #cdd5c0;
+
+  --radius-sm: 4px;
+  --radius:    8px;
+  --radius-lg: 14px;
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.08);
+  --shadow:    0 3px 12px rgba(0,0,0,.1);
+
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--text);
+  background: var(--cream);
+}
+
+body { min-height: 100vh; }
+
+a { color: var(--leaf); }
+
+/* ─── Typography ──────────────────────────────────────────── */
+h1 { font-size: 1.6rem; font-weight: 700; letter-spacing: -.02em; }
+h2 { font-size: 1.25rem; font-weight: 600; }
+h3 { font-size: 1.05rem; font-weight: 600; }
+
+/* ─── Scrollbar ───────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--mist); }
+::-webkit-scrollbar-thumb { background: var(--sage); border-radius: 3px; }
+
+/* ─── Focus ────────────────────────────────────────────────── */
+:focus-visible { outline: 2px solid var(--leaf); outline-offset: 2px; }
+
+/* ─── Utility ──────────────────────────────────────────────── */
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
